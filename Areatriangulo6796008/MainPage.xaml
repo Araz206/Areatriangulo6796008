@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:Areatriangulo6796008"
+             x:Class="Areatriangulo6796008.MainPage">
+
+    <ContentPage.BindingContext>
+        <viewModel:Areatriangulo />
+    </ContentPage.BindingContext>
+    <ScrollView>
+        <VerticalStackLayout Margin="20">
+            <Label Text="Lado 1:" Margin="0,0,0,10"/>
+            <Entry Text="{Binding Lado1}" Margin="0,0,0,20"/>
+
+            <Label Text="Lado 2:" Margin="0,0,0,10"/>
+            <Entry Text="{Binding Lado2}" Margin="0,0,0,20"/>
+
+            <Label Text="Lado 3:" Margin="0,0,0,10"/>
+            <Entry Text="{Binding Lado3}" Margin="0,0,0,20"/>
+
+            <Button Command="{Binding CalcularAreaCommand}" Text="Calcular Área" Width="150" Height="30"/>
+
+            <Label Text="{Binding Resultado}" Margin="0,20,0,0" FontSize="16"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
